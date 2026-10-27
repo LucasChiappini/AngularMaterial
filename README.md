@@ -30,7 +30,7 @@ git clone https://github.com/LucasChiappini/AngularMaterial.git
 ```
 ### Acceder a la carpeta del proyecto:
  ```bash
-cd 
+cd AngularMaterial
 ```
 ### Instalar dependencias:
  ```bash
