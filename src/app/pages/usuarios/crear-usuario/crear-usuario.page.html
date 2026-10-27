@@ -1,12 +1,13 @@
 <h1>Formulario</h1>
 
-<form #f="ngForm" (ngSubmit)="guardar">
+<!-- ✅ DESPUÉS (Corregido) -->
+<form #f="ngForm" (ngSubmit)="guardar(f)">
   <mat-form-field appearance="outline">
     <mat-label>Nombre</mat-label>
     <input matInput name="nombre" [(ngModel)]="usuario.nombre" required #nombre="ngModel" />
     <mat-hint>Ingresá tu nombre</mat-hint>
     @if (nombre.invalid) {
-      <mat-error>El nombre es obligatorio</mat-error>
+    <mat-error>El nombre es obligatorio</mat-error>
     }
   </mat-form-field>
 
@@ -15,7 +16,7 @@
     <input matInput name="apellido" [(ngModel)]="usuario.apellido" required #apellido="ngModel" />
     <mat-hint>Ingresá tu apellido</mat-hint>
     @if (apellido.invalid) {
-      <mat-error>El apellido es obligatorio</mat-error>
+    <mat-error>El apellido es obligatorio</mat-error>
     }
   </mat-form-field>
 
@@ -24,20 +25,21 @@
     <input matInput type="email" name="email" [(ngModel)]="usuario.email" required email #email="ngModel" />
     <mat-hint>Ejemplo: nombre@ucu.edu.uy</mat-hint>
     @if (email.hasError('required')) {
-      <mat-error>El email es obligatorio</mat-error>
+    <mat-error>El email es obligatorio</mat-error>
     } @else if (email.hasError('email')) {
-      <mat-error>El email no es válido</mat-error>
+    <mat-error>El email no es válido</mat-error>
     }
   </mat-form-field>
 
   <mat-form-field appearance="outline">
     <mat-label>Contraseña</mat-label>
-    <input matInput type="password" name="password" [(ngModel)]="usuario.password" required minlength="6" #password="ngModel" />
+    <input matInput type="password" name="password" [(ngModel)]="usuario.password" required minlength="6"
+      #password="ngModel" />
     <mat-hint>Mínimo 6 caracteres</mat-hint>
     @if (password.hasError('required')) {
-      <mat-error>La contraseña es obligatoria</mat-error>
+    <mat-error>La contraseña es obligatoria</mat-error>
     } @else if (password.hasError('minlength')) {
-      <mat-error>Debe tener al menos 6 caracteres</mat-error>
+    <mat-error>Debe tener al menos 6 caracteres</mat-error>
     }
   </mat-form-field>
 
@@ -45,14 +47,14 @@
     <mat-label>Rol</mat-label>
     <mat-select name="rol" [(ngModel)]="usuario.rol" required #rol="ngModel">
       @for (r of roles; track r) {
-        <mat-option [value]="r">{{ r }}</mat-option>
+      <mat-option [value]="r">{{ r }}</mat-option>
       }
     </mat-select>
     <mat-hint>Elegí un rol</mat-hint>
     @if (rol.invalid) {
-      <mat-error>El rol es obligatorio</mat-error>
+    <mat-error>El rol es obligatorio</mat-error>
     }
   </mat-form-field>
 
-   <button mat-raised-button type="submit" [disabled]="f.invalid">Guardar</button>
+  <button mat-raised-button type="submit" [disabled]="f.invalid">Guardar</button>
 </form>
