@@ -25,7 +25,7 @@ Asegúrate de tener instalado en tu sistema:
 
 Para entender los conceptos fundamentales detrás de esta aplicación y cómo funciona la librería de componentes, te invitamos a revisar nuestra guía dedicada:
 
-**[Guía Explicativa de Angular Material](./Guía-explicativa.md):** Explicación de qué es Angular Material, el comando `ng add`, componentes Standalone, el CDK y la personalización de temas.
+**[Guía Explicativa de Angular Material](./Guía-explicativa.md):** 
   
 ## Instalación y Puesta en Marcha
 Sigue estos pasos para clonar y ejecutar el proyecto localmente:
