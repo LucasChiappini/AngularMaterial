@@ -26,24 +26,24 @@ Sigue estos pasos para clonar y ejecutar el proyecto localmente:
 ### Clonar el repositorio:
 
  ```bash
-git clone [https://github.com/TU_USUARIO/TU_REPOSITORIO.git](https://github.com/TU_USUARIO/TU_REPOSITORIO.git)
-Acceder a la carpeta del proyecto:
+git clone https://github.com/LucasChiappini/AngularMaterial.git
 ```
-
+### Acceder a la carpeta del proyecto:
  ```bash
-cd TU_REPOSITORIO
-Instalar dependencias:
+cd 
 ```
-
+### Instalar dependencias:
  ```bash
 npm install
-Ejecutar la aplicación en modo desarrollo:
 ```
-
+## Ejecución
+### Ejecutar la aplicación en modo desarrollo:
  ```bash
 npm start
 ```
-
 ### o bien: ng serve
+```bash
+ng serve
+```
 Abrir en el navegador:
 Navega a http://localhost:4200/. La aplicación se recargará automáticamente si realizas cambios en el código fuente.
