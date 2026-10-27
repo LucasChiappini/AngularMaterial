@@ -1,1 +1,61 @@
-<p>home works!</p>
+<mat-toolbar color = "primary">
+    <mat-icon>Material</mat-icon>
+    <span class = "Titulo"> Usuario Material</span>
+
+    <span class="espaciador"></span>
+
+    <button mat-button routerLink="/home">
+        Home
+    </button>
+
+    <button mat-button routerLink="/lista">
+        Listas
+    </button>
+
+    <button mat-button routerLink="/formulario">
+        Formularios
+    </button>
+</mat-toolbar>
+
+<main class="contenido">
+<h1>Bienvenido a Usuarios Material</h1>
+
+<p class="descripcion">
+    Administrá los usuarios de tu aplicación de forma sencilla.
+</p>
+
+<mat-card class="tarjeta">
+    <mat-card-header>
+    <mat-icon mat-card-avatar>groups</mat-icon>
+
+    <mat-card-title>Usuarios registrados</mat-card-title>
+
+    <mat-card-subtitle>
+        Resumen de la aplicación
+    </mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+    <p class="numero"> Cantidad de Usuarios</p>
+    <p>Usuarios registrados actualmente.</p>
+    </mat-card-content>
+
+    <mat-card-actions>
+    <button
+        mat-raised-button
+        color="primary"
+        routerLink="/usuarios">
+        <mat-icon>list</mat-icon>
+        Ver usuarios
+    </button>
+
+    <button
+        mat-raised-button
+        color="accent"
+        routerLink="/usuarios/nuevo">
+        <mat-icon>person_add</mat-icon>
+        Crear usuario
+    </button>
+    </mat-card-actions>
+</mat-card>
+</main>

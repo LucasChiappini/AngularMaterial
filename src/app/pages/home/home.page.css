@@ -1,0 +1,36 @@
+.contenido {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+.titulo {
+  margin-left: 10px;
+}
+
+.espaciador {
+  flex: 1 1 auto;
+}
+
+.descripcion {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.tarjeta {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 16px;
+}
+
+.numero {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 20px 0 0;
+}
+
+mat-card-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
