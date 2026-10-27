@@ -21,7 +21,7 @@ Asegúrate de tener instalado en tu sistema:
   ```
 ---
 
-## 📚 Documentación Teórica
+## Documentación Teórica
 
 Para entender los conceptos fundamentales detrás de esta aplicación y cómo funciona la librería de componentes, te invitamos a revisar nuestra guía dedicada:
 
