@@ -1,0 +1,46 @@
+<mat-toolbar>
+    <mat-icon> 1 </mat-icon>
+    <span> Home Material </span>
+
+    <button matButton > Home </button>
+    <button mat-raised-button> formularios </button>
+    <button mat-stroked-button> listas </button>
+</mat-toolbar>
+
+<mat-card> 
+    <mat-card-header>
+        <mat-card-title>
+            Direcciones
+        </mat-card-title>
+        <mat-card-subtitle>
+            Direcciones de mis compañeros
+        </mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+        <p>
+            Direcciones
+        </p>
+        <span>
+            otras Direcciones
+        </span>
+    </mat-card-content>
+
+    <mat-card-actions>
+        <button mat-raised-button routerLink="/lista"> Listas
+            <mat-icon>
+                list
+            </mat-icon>
+        </button>
+    </mat-card-actions>
+    <mat-card-actions>
+        <button mat-raised-button routerLink="/formulario"> Formularios
+            <mat-icon>list</mat-icon>
+        </button>
+    </mat-card-actions>
+
+    <mat-card-footer>
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </mat-card-footer>
+
+</mat-card>
