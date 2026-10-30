@@ -1,0 +1,138 @@
+:host {
+  display: block;
+  min-height: 100%;
+}
+
+.home-layout {
+  min-height: 100vh;
+  background: #f4f6fb;
+  color: #202638;
+}
+
+.home-toolbar {
+  display: flex;
+  justify-content: space-between;
+  min-height: 72px;
+  padding: 0 clamp(1rem, 5vw, 4rem);
+  background: #303f9f;
+  color: #fff;
+  box-shadow: 0 2px 12px rgb(25 35 80 / 18%);
+}
+
+.home-brand,
+.home-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.home-brand {
+  gap: 0.75rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.home-brand-icon {
+  color: #c5cae9;
+}
+
+.home-navigation {
+  gap: 0.5rem;
+}
+
+.home-nav-button {
+  color: inherit;
+}
+
+.home-content {
+  display: grid;
+  place-items: start center;
+  padding: clamp(2rem, 7vh, 5rem) 1.25rem;
+}
+
+.home-card {
+  width: min(100%, 640px);
+  overflow: hidden;
+  border: 1px solid #e3e7f2;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 12px 32px rgb(35 48 90 / 9%);
+}
+
+.home-card-header {
+  padding: 1.5rem 1.5rem 0;
+}
+
+.home-card-title {
+  color: #283593;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.home-card-content {
+  padding: 1.5rem;
+}
+
+.home-description {
+  margin: 0 0 0.5rem;
+  color: #303849;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.home-secondary-text {
+  color: #697386;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.home-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0 1.5rem 1.5rem;
+}
+
+.home-card-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.home-card-footer {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .home-toolbar {
+    min-height: 64px;
+    padding-inline: 1rem;
+  }
+
+  .home-brand {
+    gap: 0.4rem;
+    font-size: 1rem;
+  }
+
+  .home-navigation {
+    gap: 0;
+  }
+
+  .home-nav-button {
+    min-width: 0;
+    padding-inline: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .home-card-header {
+    padding-inline: 1.25rem;
+  }
+
+  .home-card-content {
+    padding: 1.25rem;
+  }
+
+  .home-card-actions {
+    padding-inline: 1.25rem;
+  }
+}

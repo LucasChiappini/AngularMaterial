@@ -1,46 +1,43 @@
-<mat-toolbar>
-    <mat-icon> 1 </mat-icon>
-    <span> Home Material </span>
+<div class="home-layout">
+  <mat-toolbar class="home-toolbar">
+    <div class="home-brand">
+      <mat-icon class="home-brand-icon">home</mat-icon>
+      <span>Home Material</span>
+    </div>
 
-    <button matButton > Home </button>
-    <button mat-raised-button> formularios </button>
-    <button mat-stroked-button> listas </button>
-</mat-toolbar>
+    <nav class="home-navigation" aria-label="Navegación principal">
+      <button matButton class="home-nav-button">Home</button>
+      <button mat-raised-button class="home-nav-button">Formularios</button>
+      <button mat-stroked-button class="home-nav-button">Listas</button>
+    </nav>
+  </mat-toolbar>
 
-<mat-card> 
-    <mat-card-header>
-        <mat-card-title>
-            Direcciones
-        </mat-card-title>
-        <mat-card-subtitle>
-            Direcciones de mis compañeros
-        </mat-card-subtitle>
-    </mat-card-header>
+  <main class="home-content">
+    <mat-card class="home-card">
+      <mat-card-header class="home-card-header">
+        <mat-card-title class="home-card-title">Direcciones</mat-card-title>
+        <mat-card-subtitle>Direcciones de mis compañeros</mat-card-subtitle>
+      </mat-card-header>
 
-    <mat-card-content>
-        <p>
-            Direcciones
-        </p>
-        <span>
-            otras Direcciones
-        </span>
-    </mat-card-content>
+      <mat-card-content class="home-card-content">
+        <p class="home-description">Direcciones</p>
+        <span class="home-secondary-text">Otras direcciones</span>
+      </mat-card-content>
 
-    <mat-card-actions>
-        <button mat-raised-button routerLink="/lista"> Listas
-            <mat-icon>
-                list
-            </mat-icon>
+      <mat-card-actions class="home-card-actions">
+        <button mat-raised-button routerLink="/lista">
+          Listas
+          <mat-icon>list</mat-icon>
         </button>
-    </mat-card-actions>
-    <mat-card-actions>
-        <button mat-raised-button routerLink="/formulario"> Formularios
-            <mat-icon>list</mat-icon>
+        <button mat-raised-button routerLink="/formulario">
+          Formularios
+          <mat-icon>list</mat-icon>
         </button>
-    </mat-card-actions>
+      </mat-card-actions>
 
-    <mat-card-footer>
+      <mat-card-footer class="home-card-footer">
         <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-    </mat-card-footer>
-
-</mat-card>
+      </mat-card-footer>
+    </mat-card>
+  </main>
+</div>
